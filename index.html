@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="style">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Homepage</title>
 </head>
 
-<body>
-    <h1 id="time"></h1>
-    <h6 id="date"></h6>
 
-    <h1>Google</h1>
+<body>
+
+
+    <h1 id="theTime"></h1>
+
+    <h2 id="theGreeting"></h2>
 
     <div class="search">
         <form method="GET" action="http://google.com/search">
-            <input type="text" name="q" placeholder="Search Google..." size="125" />
-            <input type="submit" value="Search" />
+            <input type="text" name="q" placeholder="Whats on your mind?" size="125" target="_blank" />
+            <input type="image" href="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/000/220/original/search.png" />
         </form>
 
     </div>
@@ -50,14 +53,13 @@
                 </a>
             </li>
             <li class="app">
-                <a href="https://lichess.com" target="_blank">
+                <a href="https://lichess.org" target="_blank">
                     <img alt="Lichess" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Lichess_new_logo.png" height="100px" width="100px">
                 </a>
             </li>
         </ul>
     </div>
 
-    <script src="./script.js"></script>
 </body>
 
 </html>
