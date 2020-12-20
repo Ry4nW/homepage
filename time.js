@@ -1,12 +1,10 @@
 let date = new Date();
 
 function Time() {
-    s
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
     let session = 'AM';
-
 
     if (h === 0) {
         h = 12;
