@@ -1,6 +1,7 @@
 let date = new Date();
 
-const Time = () => {
+function Time() {
+    s
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
@@ -26,11 +27,11 @@ const Time = () => {
 
     const NAME = 'Ryan';
     let greetingMessage = '';
-    if (h >= 20) {
+    if (h >= 21) {
         greetingMessage = `Good night, ${NAME}.`;
-    } else if (h >= 17) {
+    } else if (h >= 18) {
         greetingMessage = 'Good evening, ${NAME}.';
-    } else if (h >= 11) {
+    } else if (h >= 12) {
         greetingMessage = `Good day, ${NAME}.`;
     } else {
         greetingMessage = `Good morning, ${NAME}.`;
@@ -43,7 +44,7 @@ const Time = () => {
 }
 setInterval(Time, 1000);
 
-const calendar = () => {
+function calender() {
     const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
