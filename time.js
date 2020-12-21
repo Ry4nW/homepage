@@ -41,8 +41,9 @@ function Time() {
     document.getElementById('theGreeting').innerText = greetingMessage;
 }
 setInterval(Time, 1000);
+Time();
 
-function calender() {
+function calendar() {
     const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -56,3 +57,4 @@ function calender() {
     document.getElementById('theDate').innerText = dateString;
 }
 setInterval(calendar, 1000);
+calendar();
