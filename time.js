@@ -1,4 +1,4 @@
-let date = new Date();
+const date = new Date();
 
 function Time() {
     let h = date.getHours();
@@ -23,22 +23,21 @@ function Time() {
         s = `0${s}`;
     }
 
-    const NAME = 'Ryan';
     let greetingMessage = '';
     if (h >= 21) {
-        greetingMessage = `Good night, ${NAME}.`;
+        greetingMessage = `Good night, `;
     } else if (h >= 18) {
-        greetingMessage = 'Good evening, ${NAME}.';
+        greetingMessage = 'Good evening, ';
     } else if (h >= 12) {
-        greetingMessage = `Good day, ${NAME}.`;
+        greetingMessage = `Good day, `;
     } else {
-        greetingMessage = `Good morning, ${NAME}.`;
+        greetingMessage = `Good morning, `;
     }
 
     let timeString = `${h}:${m} ${session}`;
 
     document.getElementById('theTime').innerText = timeString;
-    document.getElementById('theGreeting').innerText = greetingMessage;
+    document.getElementById('theGreeting').innerText = `${greetingMessage} Ryan.`;
 }
 setInterval(Time, 1000);
 Time();
