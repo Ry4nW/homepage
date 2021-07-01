@@ -1,2 +1,2 @@
 # homepage
-:rocket: Homepage.
+:rocket: A personalized homepage. (To be updated)
