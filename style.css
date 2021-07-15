@@ -29,7 +29,7 @@
 
 input[type=text] {
     padding: 15px 20px;
-    font-family: "Lucida Sans Unicode";
+    font-family: "Lucida Sans Unicode", serif;
     border-color: black;
     border-radius: 25px;
     box-shadow: 0 4px 7px 0 rgba(25, 26, 27, 0.28);
@@ -38,7 +38,7 @@ input[type=text] {
 input[type=submit] {
     background-color: whitesmoke;
     padding: 12px 30px;
-    font-family: "Lucida Sans Unicode";
+    font-family: "Lucida Sans Unicode", serif;
     border-radius: 13px;
 }
 
@@ -60,9 +60,11 @@ input[type=submit] {
 }
 
 body {
-    background-image: url("https://img5.goodfon.com/wallpaper/nbig/e/76/minimalizm-art-fon-stil-minimalism-art-background-style-les.jpg");
+    background-image: url("./backgrounds/space wallpaper.jpg");
+    padding-bottom: 450px;
+    background-size: 1920px 1080px;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+
 }
