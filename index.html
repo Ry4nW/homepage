@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta type="author" description="Ry4n_W">
-    <meta type="description" description="Homepage.">
+    <meta type="author" content="Ry4nW">
+    <meta type="description" content="A personalized Homepage project to learn basic Front-End tools.">
+    <meta name="keywords" content="Homepage, quotes, time, date, search, HTML, CSS, JavaScript">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/69/69962.png">
-    <script src="./time.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="scripts/TimeDate.js"></script>
     <title>Homepage</title>
 </head>
 
@@ -18,18 +20,16 @@
     <div class="headers">
 
         <h1 id="theGreeting"></h1>
-
         <h1 id="theTime"></h1>
-
         <h1 id="theDate"></h1>
-
 
     </div>
 
-
     <div class="search">
         <form method="GET" action="https://google.com/search">
-            <input type="text" name="q" placeholder="Whats on your mind?" size="125" />
+            <label>
+                <input type="text" name="q" placeholder="Whats on your mind?" size="125" />
+            </label>
             <input type="submit" value="Search">
         </form>
 
@@ -60,11 +60,6 @@
             <li class="app">
                 <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
                     <img alt="Gmail" src="https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png" height="100px" width="140px">
-                </a>
-            </li>
-            <li class="app">
-                <a href="https://lichess.org" target="_blank">
-                    <img alt="Lichess" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Lichess_new_logo.png" height="100px" width="100px">
                 </a>
             </li>
             <li>
