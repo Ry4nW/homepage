@@ -18,21 +18,30 @@
     font-size: 15px;
     text-shadow: 1px 1px black;
     position: absolute;
-    top: 10px;
+    top: 3px;
     left: 10px;
 }
 
 .search {
     text-align: center;
-    padding: 12px 20px;
+    position: absolute;
+    bottom: 450px;
+    left: 400px;
+
 }
 
 input[type=text] {
+    position: relative;
+
     padding: 15px 20px;
     font-family: "Lucida Sans Unicode", serif;
     border-color: black;
-    border-radius: 25px;
+    border-radius: 100px;
     box-shadow: 0 4px 7px 0 rgba(25, 26, 27, 0.28);
+}
+
+input[type=text]:active {
+    background: unset;
 }
 
 input[type=submit] {
@@ -59,12 +68,10 @@ input[type=submit] {
     position: relative;
 }
 
-body {
-    background-image: url("backgrounds/space wallpaper.jpg");
-    padding-bottom: 420px;
-    background-size: 1920px 1080px;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 
+.body {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
