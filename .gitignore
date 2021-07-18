@@ -1,5 +1,6 @@
 vscode/
-.idea/
+settings/.idea/
+settings/
 
 # Build and Release Folders
 bin-debug/
