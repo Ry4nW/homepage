@@ -47,7 +47,7 @@ function setBackground() {
 
     }
 
-    document.body.style.backgroundSize = 'cover'; // This will make sure that our
+    document.body.style.backgroundSize = 'cover'; // This will make sure that our background image sufficiently fits.
 
 }
 setBackground();
