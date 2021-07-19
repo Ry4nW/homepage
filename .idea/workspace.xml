@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3271330a-24ad-4270-abf8-80df61cc1990" name="Default Changelist" comment="folder tidy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backgrounds/morning/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backgrounds/morning/4.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="3271330a-24ad-4270-abf8-80df61cc1990" name="Default Changelist" comment="folder tidy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +55,7 @@
       <workItem from="1626641140309" duration="57000" />
       <workItem from="1626641215515" duration="15000" />
       <workItem from="1626641257042" duration="19000" />
+      <workItem from="1626641473065" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1626486802580</created>
