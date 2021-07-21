@@ -1,8 +1,8 @@
 const date = new Date();
 
-let h = (date.getHours() < 10 ? '0' : '') + date.getHours();
+let h = (date.getHours() < 10 ? '0' : '') + date.getHours(); // Format our hour count to be display by checking for one digit two digit number.
 
-function TimeDate() {
+const TimeDate = () => {
 
     let greetingString;
     let timeString = new Date(new Date().getTime() + 4).toLocaleTimeString();
@@ -24,7 +24,7 @@ function TimeDate() {
 
 setInterval(TimeDate, 1);
 
-function setBackground() {
+const setBackground = () => {
 
     const imageRandomizer = Math.floor(Math.random() * 4) + 1;
 
@@ -50,9 +50,11 @@ function setBackground() {
     document.body.style.backgroundSize = 'cover'; // This will make sure that our background image sufficiently fits.
 
 }
-setBackground();
 
-function calendar() {
+setBackground();
+setInterval(setBackground, 1.08e+7); // 3 Hours.
+
+ const calendar = () => {
 
     const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -63,6 +65,7 @@ function calendar() {
     let y = date.getFullYear();
 
     document.getElementById('theDate').innerText = `${d}, ${m} ${n}, ${y}`;
-}
-setInterval(calendar, 1);
 
+}
+
+setInterval(calendar, 1);
