@@ -12,27 +12,43 @@
 #theGreeting {
     font-size: 40px;
     position: relative;
-    bottom: 10px;
+}
+
+#theTime {
+    top: 70px;
+    position: relative;
 }
 
 #theDate {
-    font-size: 15px;
-    text-shadow: 1px 1px black;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
     position: absolute;
-    top: 3px;
+    top: 0px;
     left: 10px;
+    padding: 10px;
+    background: rgba(148, 150, 153, 0.2)
 }
 
 #theInspirationalQuote {
-    font-size: 20px;
+    font-size: 17px;
     width: 1000px;
     -webkit-text-stroke: 0.2px black;
     position: relative;
-    top: 300px;
+    top: 250px;
     margin: auto;
     padding: 10px;
     text-shadow: 4px 4px 7px black;
     background: rgba(148, 150, 153, 0.5);
+}
+
+#theWeather {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 10px;
+    background: rgba(148, 150, 153, 0.2)
 }
 
 .search {
@@ -54,16 +70,14 @@ input[type=text] {
 
 input[type=submit] {
     background-color: initial;
+    position: absolute;
     border: initial;
-    z-index: -1;
-    position: relative;
     font-size: 30px;
-    height: 55px;
-    width: 4em;
-    margin-left: -35px;
-    top: 7px;
-    padding: 15px;
-    border-radius: 13px;
+    height: 60px;
+    width: 2em;
+    margin-left: 3px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 #apps-collectively {
@@ -73,7 +87,7 @@ input[type=submit] {
     right: 20%;
     left: 20%;
     width: 60%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px 10px 0 0;
 }
 
@@ -81,6 +95,22 @@ input[type=submit] {
     list-style-type: none;
     display: inline-block;
     position: relative;
+}
+
+#theInspirationalQuote:hover, #apps-collectively:hover, #theDate:hover, #theWeather:hover {
+    background: rgba(148, 150, 153, 0.7);
+}
+
+.app:hover {
+   opacity: 0.8;
+}
+
+.up:hover {
+    border-top: 10px;
+}
+
+input[type=submit]:hover {
+    background: rgba(148, 150, 153, 0.5)
 }
 
 .up {
@@ -92,7 +122,6 @@ input[type=submit] {
 .rest {
     left: 10px;
 }
-
 
 #reddit {
     bottom: 15px;
