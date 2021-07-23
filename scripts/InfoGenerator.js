@@ -23,7 +23,7 @@ const setElementText = (element, text) => {
 // Getting updates on the weather using Vancouver's city ID on OpenWeatherMap's API.
 (function weatherUpdate()  {
 
-    const APIKey = config.APIKey;
+    const APIKey = '8a6ecaae68e681713d5c7ba8f9e9e732';
 
     const setWeather = weatherData => {
 
