@@ -1,3 +1,5 @@
+import * as config from 'config.js';
+
 // Function to set an element to our desired text whenever we need to.
 const setElementText = (element, text) => {
     document.getElementById(element).innerText = text;
@@ -23,7 +25,8 @@ const setElementText = (element, text) => {
 // Getting updates on the weather using Vancouver's city ID on OpenWeatherMap's API.
 (function weatherUpdate()  {
 
-    const APIKey = '8a6ecaae68e681713d5c7ba8f9e9e732';
+    const APIKey = config.APIKey;
+    console.log(APIKey);
 
     const setWeather = weatherData => {
 
