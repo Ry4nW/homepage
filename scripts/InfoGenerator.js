@@ -24,7 +24,6 @@ const setElementText = (element, text) => {
 (function weatherUpdate()  {
 
     const APIKey = config.APIKey;
-    console.log(APIKey);
 
     const setWeather = weatherData => {
 
