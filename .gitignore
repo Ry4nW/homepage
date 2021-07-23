@@ -1,6 +1,5 @@
-vscode/
-settings/.idea/
-settings/.vscode/
+.idea/
+.vscode/
 scripts/config.js
 
 # Build and Release Folders
