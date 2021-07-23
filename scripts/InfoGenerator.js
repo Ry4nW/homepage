@@ -1,5 +1,3 @@
-import * as config from 'config.js';
-
 // Function to set an element to our desired text whenever we need to.
 const setElementText = (element, text) => {
     document.getElementById(element).innerText = text;
