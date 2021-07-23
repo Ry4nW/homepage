@@ -5,7 +5,7 @@ let h = (date.getHours() < 10 ? '0' : '') + date.getHours(); // Format our hour 
 const TimeDate = () => {
 
     let greetingString;
-    let timeString = new Date(new Date().getTime() + 4).toLocaleTimeString();
+    let timeString = new Date(new Date().getTime() + 4).toLocaleTimeString(); // Putting our time this way will make it format to what we want it to.
 
     if (h >= 21) {
         greetingString = 'Good night, ';
@@ -37,6 +37,7 @@ const setBackground = () => {
         const folderRandomizer = Math.floor(Math.random());
         const folderString = folders[folderRandomizer];
 
+        // 50/50 probability for night or day wallpapers to be picked.
         document.body.style.backgroundImage = `url('./backgrounds/${folderString}/${imageRandomizer}.jpg')`;
 
     } else if (parseInt(h) >= 12) {
@@ -47,12 +48,12 @@ const setBackground = () => {
 
     }
 
-    document.body.style.backgroundSize = 'cover'; // This will make sure that our background image sufficiently fits.
+    document.body.style.backgroundSize = 'cover'; // This will make sure that our background image covers the whole area.
 
 }
 
 setBackground();
-setInterval(setBackground, 1.08e+7); // 3 Hours.
+setInterval(setBackground, 600000); // Every 10 minutes.
 
  const calendar = () => {
 
