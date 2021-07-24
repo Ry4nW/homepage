@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.body {
+    -webkit-backface-visibility: hidden;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .headers {
     font-family: 'Open Sans', sans-serif;
@@ -9,27 +17,35 @@
     text-shadow: 2px 2px 4px black;
 }
 
+#theDate, #theWeather, #theInspirationalQuote {
+    border-radius: 5px;
+}
+
 #theGreeting {
+    transition: 1s;
     font-size: 40px;
     position: relative;
 }
 
 #theTime {
+    transition: 1s;
     top: 70px;
     position: relative;
 }
 
 #theDate {
+    transition: 1s;
     font-size: 20px;
     text-shadow: 2px 2px 4px black;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 10px;
     padding: 10px;
-    background: rgba(148, 150, 153, 0.2)
+    /* background: rgba(148, 150, 153, 0.2) */
 }
 
 #theInspirationalQuote {
+    transition: 1s;
     font-size: 17px;
     width: 1000px;
     -webkit-text-stroke: 0.2px black;
@@ -42,13 +58,14 @@
 }
 
 #theWeather {
+    transition: 1s;
     font-size: 20px;
     text-shadow: 2px 2px 4px black;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 10px;
     padding: 10px;
-    background: rgba(148, 150, 153, 0.2)
+    /* background: rgba(148, 150, 153, 0.2) */
 }
 
 .search {
@@ -59,6 +76,7 @@
 }
 
 input[type=text] {
+    transition: 1s;
     position: relative;
     height: 30px;
     padding: 15px 20px;
@@ -69,7 +87,8 @@ input[type=text] {
 }
 
 input[type=submit] {
-    background-color: initial;
+    background: initial;
+    transition: 1s;
     position: absolute;
     border: initial;
     font-size: 30px;
@@ -81,6 +100,7 @@ input[type=submit] {
 }
 
 #apps-collectively {
+    transition: 1s;
     position: fixed;
     bottom: 0;
     text-align: center;
@@ -97,9 +117,26 @@ input[type=submit] {
     position: relative;
 }
 
-#theInspirationalQuote:hover, #apps-collectively:hover, #theDate:hover, #theWeather:hover {
-    background: rgba(148, 150, 153, 0.7);
+#theDate:hover, #theWeather:hover {
+    transition: 1s;
+    background: rgba(148, 150, 153, 0.3);
 }
+
+#apps-collectively:hover, #theInspirationalQuote:hover {
+    transition: 1s;
+    background: rgba(148, 150, 153, 0.9);
+}
+
+#theGreeting:hover, #theTime:hover, #input[type=submit]:hover {
+    transition: 1s;
+    text-shadow: 4px 4px 6px black;
+}
+
+input[type=text]:hover {
+    transition: 1s;
+    box-shadow: 4px 4px 10px black;
+}
+
 
 .app:hover {
    opacity: 0.8;
@@ -126,11 +163,4 @@ input[type=submit]:hover {
 #reddit {
     bottom: 15px;
     right: 15px;
-}
-
-.body {
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }

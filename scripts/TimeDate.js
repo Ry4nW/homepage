@@ -22,13 +22,19 @@ const TimeDate = () => {
 
 }
 
+TimeDate();
 setInterval(TimeDate, 1);
 
 const setBackground = () => {
 
     const imageRandomizer = Math.floor(Math.random() * 4) + 1;
 
+    // Create a smoother transition while loading in the page.
+    document.body.style.opacity = '0';
+    document.body.style.backgroundImage.transition = 'opacity 2s';
+
     if (parseInt(h) >= 21) {
+
         document.body.style.backgroundImage = `url(./backgrounds/night/${imageRandomizer}.jpg)`;
 
     } else if (parseInt(h) >= 18) {
@@ -39,6 +45,8 @@ const setBackground = () => {
 
         // 50/50 probability for night or day wallpapers to be picked.
         document.body.style.backgroundImage = `url('./backgrounds/${folderString}/${imageRandomizer}.jpg')`;
+
+        document.body.style.transition = 'opacity 2s';
 
     } else if (parseInt(h) >= 12) {
         document.body.style.backgroundImage = `url(./backgrounds/day/${imageRandomizer}.jpg)`;
@@ -69,4 +77,5 @@ setInterval(setBackground, 600000); // Every 10 minutes.
 
 }
 
+calendar();
 setInterval(calendar, 1);
