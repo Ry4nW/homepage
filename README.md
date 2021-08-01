@@ -13,4 +13,6 @@ Note: [production site](http://ry4nw.me/homepage/) is broken, currently working 
 - Random inspirational quote generator using type.fit's [API](https://type.fit/api/quotes)
 - Weather generator using OpenWeatherMap's [API](https://openweathermap.org/api)
 
+![img.png](backgrounds/homepageDisplay.png)
+
 
