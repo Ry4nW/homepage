@@ -4,7 +4,8 @@ A personalized new-page-tab/homepage written with basic frontend tools.
 
 # Site
 
-Note: [production site](http://ry4nw.me/homepage/) is broken, currently working on fixes. Works fine when opened locally.
+[http://ry4nw.me/homepage/](http://ry4nw.me/homepage/)
+- Note: extensions for dark mode, etc. may interfere. Works best on Chrome.
 
 # Features
 
@@ -14,5 +15,3 @@ Note: [production site](http://ry4nw.me/homepage/) is broken, currently working 
 - Weather generator using OpenWeatherMap's [API](https://openweathermap.org/api)
 
 ![img.png](backgrounds/homepageDisplay.png)
-
-
